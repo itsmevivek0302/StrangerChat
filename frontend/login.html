@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#34276f">
+  <title>Login · StrangerChat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="story-panel" aria-label="Welcome to StrangerChat">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4.75 5.75A3.75 3.75 0 0 1 8.5 2h7A3.75 3.75 0 0 1 19.25 5.75v5A3.75 3.75 0 0 1 15.5 14.5h-3.1l-4.15 3.1c-.5.37-1.2.02-1.2-.6v-2.7a3.75 3.75 0 0 1-2.3-3.55v-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5h6m-6 3h3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        StrangerChat
+      </a>
+      <div class="story-copy">
+        <p class="eyebrow">A little hello goes a long way</p>
+        <h1>Good to see <span>you again.</span></h1>
+        <p>Pick up where the conversation left off. Your next great chat is just around the corner.</p>
+      </div>
+      <div class="conversation-art" aria-hidden="true">
+        <svg viewBox="0 0 560 340" fill="none">
+          <defs>
+            <linearGradient id="bubbleA" x1="85" y1="76" x2="382" y2="262" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#f0edff"/></linearGradient>
+            <linearGradient id="bubbleB" x1="317" y1="119" x2="479" y2="259" gradientUnits="userSpaceOnUse"><stop stop-color="#ffb6d0"/><stop offset="1" stop-color="#ff79ad"/></linearGradient>
+            <linearGradient id="avatarA" x1="144" y1="156" x2="194" y2="207" gradientUnits="userSpaceOnUse"><stop stop-color="#ffd27d"/><stop offset="1" stop-color="#ff9b70"/></linearGradient>
+            <linearGradient id="avatarB" x1="359" y1="191" x2="403" y2="235" gradientUnits="userSpaceOnUse"><stop stop-color="#9ef1d6"/><stop offset="1" stop-color="#48c8b6"/></linearGradient>
+            <filter id="shadow" x="54" y="57" width="454" height="274" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="13"/></filter>
+          </defs>
+          <circle cx="286" cy="180" r="137" fill="white" fill-opacity=".06"/>
+          <circle cx="286" cy="180" r="104" stroke="white" stroke-opacity=".11"/>
+          <circle cx="84" cy="106" r="5" fill="#A6F0D9"/><circle cx="468" cy="85" r="4" fill="#FFD0E1"/>
+          <circle cx="491" cy="269" r="6" fill="#C1B7FF"/><path d="m112 267 5-11 5 11 11 5-11 5-5 11-5-11-11-5 11-5Z" fill="white" fill-opacity=".55"/>
+          <ellipse cx="282" cy="283" rx="177" ry="24" fill="#21184F" fill-opacity=".2" filter="url(#shadow)"/>
+          <path d="M99 93c0-14.36 11.64-26 26-26h195c14.36 0 26 11.64 26 26v104c0 14.36-11.64 26-26 26H201l-46 32c-5.32 3.71-12.62-.09-12.62-6.57V218.6C116.6 215.4 99 197.36 99 175V93Z" fill="url(#bubbleA)"/>
+          <circle cx="170" cy="125" r="24" fill="url(#avatarA)"/>
+          <path d="M160 129c2.8 4 6.1 6 10 6s7.2-2 10-6" stroke="#8C4D52" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="163" cy="120" r="2" fill="#503A53"/><circle cx="177" cy="120" r="2" fill="#503A53"/>
+          <rect x="207" y="112" width="91" height="8" rx="4" fill="#DAD6EF"/><rect x="207" y="128" width="66" height="7" rx="3.5" fill="#EAE8F4"/>
+          <rect x="144" y="166" width="156" height="7" rx="3.5" fill="#DCD9EE"/><rect x="144" y="181" width="122" height="7" rx="3.5" fill="#EAE8F4"/>
+          <path d="M316 147c0-12.15 9.85-22 22-22h108c12.15 0 22 9.85 22 22v72c0 12.15-9.85 22-22 22h-53l-31 22c-4.11 2.92-9.79-.02-9.79-5.06V240.4c-20.45-1.91-36.21-19.05-36.21-39.9v-53Z" fill="url(#bubbleB)"/>
+          <circle cx="361" cy="166" r="16" fill="url(#avatarB)"/>
+          <path d="M354 168c2 3 4.3 4.5 7 4.5s5-1.5 7-4.5" stroke="#236F69" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="356.5" cy="162" r="1.5" fill="#285B5D"/><circle cx="365.5" cy="162" r="1.5" fill="#285B5D"/>
+          <rect x="386" y="158" width="56" height="6" rx="3" fill="white" fill-opacity=".75"/><rect x="386" y="171" width="39" height="5" rx="2.5" fill="white" fill-opacity=".55"/>
+          <rect x="350" y="199" width="91" height="6" rx="3" fill="white" fill-opacity=".72"/><rect x="350" y="212" width="69" height="6" rx="3" fill="white" fill-opacity=".5"/>
+          <circle cx="461" cy="119" r="16" fill="#F5A2C5"/><path d="M454 120c2 3 4.3 4.5 7 4.5s5-1.5 7-4.5" stroke="#8C456E" stroke-width="1.7" stroke-linecap="round"/><circle cx="456.5" cy="114" r="1.4" fill="#663B69"/><circle cx="465.5" cy="114" r="1.4" fill="#663B69"/>
+          <circle cx="130" cy="270" r="11" fill="#B4A8FF" fill-opacity=".8"/><circle cx="130" cy="270" r="4" fill="white" fill-opacity=".9"/>
+          <path d="M439 279c7-10 18-10 25 0" stroke="#9EF1D6" stroke-width="3" stroke-linecap="round"/><circle cx="451.5" cy="272" r="3" fill="#9EF1D6"/>
+        </svg>
+      </div>
+      <p class="story-foot">Real people. Kind conversations. A little more connection.</p>
+    </section>
+
+    <section class="auth-side">
+      <form class="auth-card" id="form">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4.75 5.75A3.75 3.75 0 0 1 8.5 2h7A3.75 3.75 0 0 1 19.25 5.75v5A3.75 3.75 0 0 1 15.5 14.5h-3.1l-4.15 3.1c-.5.37-1.2.02-1.2-.6v-2.7a3.75 3.75 0 0 1-2.3-3.55v-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5h6m-6 3h3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          StrangerChat
+        </a>
+        <h2>Welcome back</h2>
+        <p class="auth-intro">Sign in and let the conversation continue.</p>
+        <label class="form-field"><span>Email address</span><input id="email" type="email" placeholder="you@example.com" autocomplete="email" required></label>
+        <label class="form-field"><span>Password</span><input id="password" type="password" placeholder="Enter your password" autocomplete="current-password" required></label>
+        <button class="btn auth-submit" type="submit">Login</button>
+        <p id="error" class="error" role="alert" aria-live="polite"></p>
+        <p class="auth-switch">New around here? <a href="register.html">Create an account</a></p>
+      </form>
+    </section>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

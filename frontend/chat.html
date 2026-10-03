@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>StrangerChat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app">
+  <header>
+    <a class="app-brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4.75 5.75A3.75 3.75 0 0 1 8.5 2h7A3.75 3.75 0 0 1 19.25 5.75v5A3.75 3.75 0 0 1 15.5 14.5h-3.1l-4.15 3.1c-.5.37-1.2.02-1.2-.6v-2.7a3.75 3.75 0 0 1-2.3-3.55v-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5h6m-6 3h3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+      StrangerChat
+    </a>
+    <span id="me"></span>
+    <button onclick="logout()" class="small">Logout</button>
+  </header>
+  <main>
+    <aside>
+      <div class="search"><input id="search" placeholder="Find people..." oninput="loadUsers()"></div>
+      <div id="users"></div>
+    </aside>
+    <section class="chat">
+      <div id="empty" class="empty">Select someone to start chatting.</div>
+      <div id="panel" hidden>
+        <div class="chathead">
+          <div><b id="chatName"></b><small id="chatBio"></small></div>
+          <div>
+            <button onclick="blockUser()" class="danger">Block</button>
+            <button onclick="reportUser()" class="small">Report</button>
+          </div>
+        </div>
+        <div id="messages" class="messages"></div>
+        <div id="typing"></div>
+        <p id="chatError" class="error" role="status"></p>
+        <form id="sendForm" class="composer">
+          <input id="message" autocomplete="off" maxlength="5000" placeholder="Type a message...">
+          <button class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/chat.js?v=2"></script>
+</body>
+</html>
